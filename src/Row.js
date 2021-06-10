@@ -16,7 +16,7 @@ function Row({title, fetchUrl, isLargeRow}) {
     useEffect(() => {
         //if [] are empty, then run once when row loads, and dont run again
         async function fetchData() {
-            const request = await axios.get(fetchUrl);//to make a request to the entered URL
+            const request = await axios.get(fetchUrl);//to make a request to the entered URL. This will return us an array with bunch of movies and its related info [... , ... , ... , ...]
             console.log(request);//to see the data structure we are getting after making an api request
             setMovies(request.data.results);
             return request;            

@@ -12,8 +12,7 @@ import Banner from "./Banner";
 
 function App() {
   return (
-    <div className="App">
-      {/* NavBar */}
+    <div className="app">
       <Banner />
 
       <Row 
